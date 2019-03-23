@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  consoleapp-dockercron:
+    image: ${DOCKER_REGISTRY-}consoleappdockercron
+    build:
+      context: .
+      dockerfile: ConsoleApp-DockerCron/Dockerfile
